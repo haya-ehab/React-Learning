@@ -44,9 +44,6 @@ Welcome to my React learning journal! This repository contains notes, code snipp
 
 ---
 
-## 📈 Progress Log
-
-Check out [`checkpoints.md`](checkpoints.md) for a detailed timeline of what I’ve learned so far!
 
 ---
 
