@@ -2,8 +2,7 @@
 
 # 🚀 My React Learning Journey
 
-Welcome to my React learning journal! This repository contains notes, code snippets, and mini-projects as I learn React — starting with the [Traversy Media React Crash Course 2024](https://www.youtube.com/watch?v=SqcY0GlETPk).
-
+Welcome to my React learning journal! This repository contains notes, code snippets, and mini-projects as I learn React
 ---
 
 
@@ -60,3 +59,5 @@ Feel free to open an issue or share tips if you're also learning React — let's
 🔗 [My GitHub Profile](https://github.com/haya-ehab)
 
 ---
+## License 
+This Project is Licensed Under The MIT license 
