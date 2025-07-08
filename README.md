@@ -2,7 +2,7 @@
 
 # 🚀 My React Learning Journey
 
-Welcome to my React learning journal! This repository contains notes, code snippets, and mini-projects as I learn React — starting with the [Traversy Media React Crash Course 2024](https://www.youtube.com/watch?v=SqcY0GlETPk).
+Welcome to my React learning journal! This repository contains notes, code snippets, and mini-projects as I learn React.
 
 ---
 
@@ -29,8 +29,8 @@ Welcome to my React learning journal! This repository contains notes, code snipp
 - [x] Event Handling
 - [x] API Requests (fetch)
 - [x] React Router
-- [ ] useContext & other hooks (coming soon!)
-- [ ] Redux / State Management (later)
+- [x] useContext & other hooks (coming soon!)
+- [x] Redux / State Management (later)
 
 ---
 
@@ -53,10 +53,6 @@ Feel free to open an issue or share tips if you're also learning React — let's
 
 ---
 
-## 🧑‍💻 Author
+## LICENSE
 
-**Haya** | 16 y/o Developer & Tech Learner  
-🌐 Fluent in Arabic,English | Working on B1 German  
-🔗 [My GitHub Profile](https://github.com/haya-ehab)
-
----
+This Project is under the MIT LICENSE
