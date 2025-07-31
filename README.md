@@ -1,4 +1,4 @@
-cd 
+
 <h1 align="center">🚀 React Learning Journey</h1>
 <p align="center">
   📚 Following <a href="https://www.udemy.com/course/the-ultimate-react-course/?couponCode=25BBPMXINACTIVE">The Ultimate React Course</a> by Jonas Schmedtmann
