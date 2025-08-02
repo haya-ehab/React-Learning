@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const tempMovieData = [
   {
@@ -50,40 +50,50 @@ const tempWatchedData = [
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-export default function App() {
-  const [movies, setMovies] = useState(tempMovieData);
-   const [watched, setWatched] = useState(tempWatchedData);
-  return (
+const KEY = "6314c45e";
 
+export default function App() {
+  const [movies, setMovies] = useState([]);
+  const [watched, setWatched] = useState([]);
+  const query = "interstellar";
+
+  useEffect(function () {
+    async function fetchMovies() {
+      const res = await fetch(
+        `http://www.omdbapi.com/?apikey=${KEY}&s=interstellar`
+      );
+      const data = await res.json();
+      setMovies(data.Search);
+      console.log(data.Search)
+    }
+    fetchMovies();
+  }, []);
+
+  return (
     <>
       <NavBar>
         <Search />
         <NumResults movies={movies} />
       </NavBar>
       <Main>
-      
-        <Box element={<MovieList movies={movies}/>}/>
-        <Box 
-
-        element ={
-          <>
-           <WatchedSummary watched={watched} />
-           <WatchedMoviesList watched={watched} />
-           </>
-        }
+        <Box element={<MovieList movies={movies} />} />
+        <Box
+          element={
+            <>
+              <WatchedSummary watched={watched} />
+              <WatchedMoviesList watched={watched} />
+            </>
+          }
         />
 
-
-       <Box>
-          <MovieList movies={movies}/>
-          </Box>
-          <Box>
-          
-//           <WatchedSummary watched={watched} />
-//           <WatchedMoviesList watched={watched} />
-//        
-          </Box> 
-       
+        <Box>
+          <MovieList movies={movies} />
+        </Box>
+        <Box>
+          // <WatchedSummary watched={watched} />
+          // <WatchedMoviesList watched={watched} />
+          //
+        </Box>
       </Main>
     </>
   );
@@ -134,13 +144,10 @@ function Box({ children }) {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <div className="box">
-      <button
-        className="btn-toggle"
-        onClick={() => setIsOpen((open) => !open)}
-      >
+      <button className="btn-toggle" onClick={() => setIsOpen((open) => !open)}>
         {isOpen ? "–" : "+"}
       </button>
-      {isOpen && children  }
+      {isOpen && children}
     </div>
   );
 }
@@ -168,7 +175,6 @@ function Box({ children }) {
 //   );
 // }
 
-
 function MovieList({ movies }) {
   return (
     <ul className="list">
@@ -193,8 +199,6 @@ function Movie({ movie }) {
     </li>
   );
 }
-
-
 
 function WatchedSummary({ watched }) {
   const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
