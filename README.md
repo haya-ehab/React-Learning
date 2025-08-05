@@ -37,7 +37,7 @@ I’m building multiple apps and covering everything from **fundamentals** to **
 | React Basics                     | ✅ Completed   |
 | Components & Props               | ✅ Completed   |
 | State & Events                   | ✅ Completed   |
-| Forms & Validation               | 🔄 In Progress |
+| Forms & Validation               | ✅ Completed |
 | Routing                          | ⏭️ Upcoming    |
 | Context & Global State           | ⏭️ Upcoming    |
 | Final Project                    | ⏭️ Upcoming    |
