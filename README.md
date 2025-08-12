@@ -24,7 +24,6 @@ I’m building multiple apps and covering everything from **fundamentals** to **
 - 📦 Context API & Global State
 - 📡 Fetching data & APIs
 - 🧱 Component Architecture
-- 🚀 Deployment (Vercel/Netlify)
 - 🔁 Custom Hooks & Advanced Techniques
 
 ---
